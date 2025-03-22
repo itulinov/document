@@ -1,0 +1,19 @@
+.App {
+    padding: 0 32px;
+    padding-top: 25px;
+    margin: 0 auto;
+    width: 1180px;
+    flex-grow: 1;
+}
+
+@media (max-width: 1240px) { 
+    .App {
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) { 
+    .App {
+        padding: 16px;
+    }
+}

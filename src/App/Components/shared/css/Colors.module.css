@@ -1,0 +1,55 @@
+.blue {
+    color: #3671e2;
+}
+.b_blue:hover {
+    border: 1px solid #3671e2;
+}
+
+.green {
+    color: #50a459;
+}
+.b_green:hover {
+    border: 1px solid #50a459;
+}
+
+.orange {
+    color: #f39937;
+}
+.b_orange:hover {
+    border: 1px solid #f39937;
+}
+
+.turquoise {
+    color: #47a8c4;
+}
+.b_turquoise:hover {
+    border: 1px solid #47a8c4;
+}
+
+.purple {
+    color: #741fe7;
+}
+.b_purple:hover {
+    border: 1px solid #741fe7;
+}
+
+.pink {
+    color: #840381 !important;
+}
+.b_pink:hover {
+    border: 1px solid #840381;
+}
+
+.yellow {
+    color: #a4a400;
+}
+.b_yellow:hover {
+    border: 1px solid #a4a400;
+}
+
+.scarlet {
+    color: #f06a60;
+}
+.b_scarlet:hover {
+    border: 1px solid #f06a60;
+}

@@ -1,0 +1,44 @@
+.Tile {
+    background-color: #e7f6eb;
+    padding: 16px 0;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    color: #000;
+    display: block;
+    overflow: hidden;
+}
+
+/*
+.Tile:hover {
+    border: 1px solid #3671e2;
+}
+
+.green:hover {
+    border: 1px solid #50a459;
+}
+.orange:hover {
+    border: 1px solid #f39937;
+}
+.turquoise:hover {
+    border: 1px solid #47a8c4;
+}
+.purple:hover {
+    border: 1px solid #741fe7;
+}
+*/
+ 
+.padding {
+    padding: 0 16px;
+    display: flex;
+    height: 100%;
+    gap: 16px;
+}
+
+.image {
+    flex: 0 0 40px;
+    background-repeat: no-repeat;
+    min-height: 40px;
+}

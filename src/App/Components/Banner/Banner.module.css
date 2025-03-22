@@ -1,0 +1,23 @@
+.Banner {
+    padding-bottom: 40px;
+}
+
+.Banner > div {
+    height: 290px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1024px) { 
+    .Banner > div {
+        height: 190px;
+    }
+}
+
+@media (max-width: 600px) { 
+    .Banner > div {
+        height: 120px;
+    }
+}

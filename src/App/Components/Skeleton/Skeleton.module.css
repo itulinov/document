@@ -1,0 +1,58 @@
+.Skeleton {
+    opacity: 0.5;
+}
+
+.banner {
+    padding-bottom: 40px;
+}
+
+.banner {
+    height: 290px;
+    border-radius: 12px;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.head {
+    height: 28px;
+    width: 100px;
+    border-radius: 12px;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.menu > div {
+    height: 128px;
+    background-color: #eee;
+    flex: 0 0 32%;
+    border-radius: 12px;
+}
+
+@media (max-width: 1024px) { 
+    .banner {
+        height: 190px;
+    }
+}
+
+@media (max-width: 900px) { 
+    .menu > div {
+        flex: 0 0 48%;
+    }
+}
+
+@media (max-width: 600px) { 
+    .banner {
+        height: 120px;
+    }
+    .menu > div {
+        flex: 0 0 100%;
+    }
+}
+
