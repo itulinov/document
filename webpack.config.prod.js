@@ -33,7 +33,7 @@ module.exports = {
     //mode: 'development',
     target: 'web',
     output: {
-        path: path.join(__dirname, '/dist'),
+        path: path.join(__dirname, '/build'),
         filename: '[name].[chunkhash:8].bundle.js',
         chunkFilename: '[name].[chunkhash:8].chunk.js',
         assetModuleFilename: 'assets/[hash][ext][query]',
@@ -71,14 +71,21 @@ module.exports = {
                 ],
             },
             {
-                test: /\.(png|jpe?g|gif|woff2|svg|woff|eot|ttf)$/i,
+                test: /\.(png|jpe?g|gif|svg)$/i,
                 loader: 'file-loader',
                 options: {
                     publicPath: './',
                     name: '[name]-[hash].[ext]',
                     publicPath: projectConfig.publicPath
-                },
+                }
             },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: "asset/resource",
+                generator: {
+                    filename: "assets/[name][ext]",
+                },
+            }
         ],
     },
     optimization: {

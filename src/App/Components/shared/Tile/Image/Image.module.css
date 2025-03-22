@@ -4,18 +4,8 @@
 }
 
 
-@font-face {
-    font-display: block;
-    font-family: "BeelineIcons";
-    font-style: normal;
-    font-weight: 400;
-    src: url('@fonts/BeelineIcons.woff2') format('woff2'),
-         url('@fonts/BeelineIcons.woff') format('woff'),
-         url('@fonts/BeelineIcons.ttf') format('ttf');
-}
-
 .icons {
-    font-family: "BeelineIcons";
+    font-family: "icons";
     font-weight: normal;
     font-style: normal;
     font-size: 40px; /* Preferred icon size */

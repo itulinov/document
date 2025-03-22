@@ -1,45 +1,10 @@
-/*
 @font-face {
-    font-family: 'Beeline Sans bu';
-    src: url('../assets/fonts/BeelineSans-Bold.woff') format('woff'),
-         url('../assets/fonts/BeelineSans-Bold.woff2') format('woff2'),
-         url('../assets/fonts/BeelineSans-Medium.woff') format('woff'),
-         url('../assets/fonts/BeelineSans-Medium.woff2') format('woff2'),
-         url('../assets/fonts/BeelineSans-Regular.woff') format('woff'),
-         url('../assets/fonts/BeelineSans-Regular.woff2') format('woff2'),
-         url('../assets/fonts/BeelineSans-Black.woff') format('woff'),
-         url('../assets/fonts/BeelineSans-Black.woff2') format('woff2');
-    font-weight: normal;
+    font-display: block;
+    font-family: "icons";
     font-style: normal;
+    font-weight: 400;
+    src: url('@fonts/icons.woff2') format('woff2'),
+         url('@fonts/icons.woff') format('woff'),
+         url('@fonts/icons.ttf') format('ttf');
 }
 
-div, p, span, a, input, textarea, keygen, select, button, body {
-    font-family:    'Beeline Sans bu', 'Roboto', 'Open Sans',
-                    Trebuchet MS, Verdana, Tahoma, sans-serif;
-}
-*/
-
-body {
-    /*background-color: #fff !important;*/
-}
-
-.page-content {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: block;
-    /*margin-top: 64px;*/
-}
-
-/*
-.page-columns-2 .zone-main {
-    width: 100%;
-}
-
-@media (max-width: 1240px) { 
-    .App {
-        width: 100%;
-        margin: 0;
-    }
-}
-*/
