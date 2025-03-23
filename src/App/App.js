@@ -20,11 +20,12 @@ function App({settings}) {
         )
     }
 
+    const {tile: type} = settings.data
     return (
         <div className={Classes.App}>
             <Banner url={banner}/>
             <Head name={head}/>
-            <Menu menu={menu}/>
+            <Menu menu={menu} type={type}/>
         </div>
     )
 }
