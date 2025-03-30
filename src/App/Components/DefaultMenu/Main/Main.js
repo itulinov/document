@@ -5,8 +5,8 @@ import useMain from './useMain'
 import Classes from "./Main.module.css"
 
 
-function Main({menu}) {
-    const [first, second, third, fourth] = useMain(menu)
+function Main({docs}) {
+    const [first, second, third, fourth] = useMain(docs)
 
     const cls = [Classes.second]
     if (fourth == undefined) {

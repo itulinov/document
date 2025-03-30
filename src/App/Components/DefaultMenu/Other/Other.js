@@ -2,7 +2,7 @@ import React from 'react'
 import Main from '../Main'
 import Classes from './Other.module.css'
 
-function Other({menu, type}) {
+function Other({docs, type}) {
     // делим маcсив на подмассивы по три элемента
     const chunks = ((array, size) => {
         const result = []
@@ -11,13 +11,13 @@ function Other({menu, type}) {
         }
 
         return result
-    })(menu, 3)
+    })(docs, 3)
 
 
     return (
         <div className={Classes.Other}>
             {chunks.map((chunk, i) => {
-                return <Main key={i} menu={chunk} type={type}/>
+                return <Main key={i} docs={chunk} type={type}/>
             })}
         </div>
     )

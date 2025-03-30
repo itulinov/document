@@ -9,7 +9,7 @@ export default (settings) => {
     // основные данные для приложения
     const [banner, setBanner] = useState("")
     const [head, setHead] = useState("")
-    const [menu, setMenu] = useState(null)
+    const [docs, setDocs] = useState(null)
 
     // запрос к серверу
     const [run] = useApiRequest((result) => {
@@ -22,7 +22,7 @@ export default (settings) => {
 
         setBanner(banner)
         setHead(head)
-        setMenu(menus)
+        setDocs(menus)
     })
 
     useEffect(() => {
@@ -48,5 +48,5 @@ export default (settings) => {
         return getDemoData() // дефолтные данные для приложения
     }
 
-    return {banner, head, menu}
+    return {banner, head, docs}
 }

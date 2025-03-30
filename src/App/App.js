@@ -2,7 +2,7 @@ import React from 'react'
 
 import Banner from "@Components/Banner"
 import Head from '@Components/Head'
-import Menu from "@Components/Menu"
+import Documents from "@Components/Documents"
 import useApp from './useApp'
 import Skeleton from '@Components/Skeleton'
 
@@ -11,8 +11,8 @@ import "./index.css"
 
 
 function App({settings}) {
-    const {banner, head, menu} = useApp(settings)
-    if (menu == null) {
+    const {banner, head, docs} = useApp(settings)
+    if (docs == null) {
         return (
             <div className={Classes.App}>
                 <Skeleton />
@@ -25,7 +25,7 @@ function App({settings}) {
         <div className={Classes.App}>
             <Banner url={banner}/>
             <Head name={head}/>
-            <Menu menu={menu} type={type}/>
+            <Documents docs={docs} type={type}/>
         </div>
     )
 }
