@@ -17,7 +17,7 @@ function Documents({docs, type:theme=""}) {
 
 
     return (
-        <DefaultMenu docs={docs} type={type}/>
+        <DefaultMenu docs={docs}/>
     )
 }
 

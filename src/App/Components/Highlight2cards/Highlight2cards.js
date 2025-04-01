@@ -1,7 +1,8 @@
 import React from "react"
 import Classes from "./Highlight2cards.module.css"
 
-function Highlight2cards() {
+function Highlight2cards({docs}) {
+    console.log(docs)
     return (
         <div className={Classes.Highlight2cards}>
             Highlight2cards

