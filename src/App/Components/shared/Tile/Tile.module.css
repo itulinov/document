@@ -11,25 +11,6 @@
     overflow: hidden;
 }
 
-/*
-.Tile:hover {
-    border: 1px solid #3671e2;
-}
-
-.green:hover {
-    border: 1px solid #50a459;
-}
-.orange:hover {
-    border: 1px solid #f39937;
-}
-.turquoise:hover {
-    border: 1px solid #47a8c4;
-}
-.purple:hover {
-    border: 1px solid #741fe7;
-}
-*/
- 
 .padding {
     padding: 0 16px;
     display: flex;

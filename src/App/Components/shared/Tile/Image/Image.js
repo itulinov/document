@@ -2,7 +2,7 @@ import React from "react"
 import Classes from "./Image.module.css"
 import Colors from "@App/Components/shared/css/Colors.module.css"
 
-function Image({img}) {
+function Image({img={}}) {
     const {
         color,
         name,

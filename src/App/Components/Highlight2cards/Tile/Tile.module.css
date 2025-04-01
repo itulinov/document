@@ -1,0 +1,13 @@
+.Tile {
+    min-height: 100px;
+    flex: 1;
+    cursor: pointer;
+
+    background-color: #e7f6eb;
+    border-radius: 12px;
+    width: 100%;
+    border: 1px solid transparent;
+    color: #000;
+    display: block;
+    overflow: hidden;
+}
