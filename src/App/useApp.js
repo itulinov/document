@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react"
-import getDemoData from './libs/getDemoData'
 import useApiRequest from './hooks/useApiRequest'
 import getDocId from './libs/getDocId'
 
@@ -44,8 +43,8 @@ export default (settings) => {
     // вывод дефолтных данных
     // если родительский раздел портала не определен
     if (docId === null || docId === undefined) {
-        console.log("warning: document_id not defined")
-        return getDemoData() // дефолтные данные для приложения
+        console.log("ERROR: document_id not defined")
+        return {}
     }
 
     return {banner, head, docs}

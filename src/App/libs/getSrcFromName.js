@@ -4,6 +4,9 @@ import book_orange from "@img/book_orange.png"
 import question from "@img/question.png"
 import talk from "@img/talk.png"
 import monitor from "@img/monitor.png"
+import tile_01 from "@img/tile_01.svg"
+import tile_02 from "@img/tile_02.jpg"
+import tile_hover from "@img/tile_hover.svg"
 
 
 /**
@@ -19,6 +22,9 @@ export default (name) => {
         question,
         talk,
         monitor,
+        tile_01,
+        tile_02,
+        tile_hover,
     }
 
     return files[name]

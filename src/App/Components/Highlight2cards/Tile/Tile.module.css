@@ -3,11 +3,45 @@
     flex: 1;
     cursor: pointer;
 
-    background-color: #e7f6eb;
+    /*background-color: #e7f6eb;*/
+    background-color: #f7f8fc;
+    padding: 14px 42px 14px 14px;
     border-radius: 12px;
-    width: 100%;
     border: 1px solid transparent;
-    color: #000;
+    color: #3c3c3c;
     display: block;
     overflow: hidden;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.Tile:hover {
+    color: #000;
+}
+
+.title {
+    font-size: 22px;
+}
+
+.comment {
+    margin-top: 12px;
+    color: #828388;
+}
+
+.go {
+    top: 14px;
+    right: 10px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3c3c3c;
+}
+
+.Tile:hover .go {
+    background-color: #6df5d1;
 }

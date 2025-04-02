@@ -1,6 +1,8 @@
-import React from 'react'
+import React from "react"
 import Main from '../Main'
-import Classes from './Other.module.css'
+
+import Classes from "./Other.module.css"
+
 
 function Other({docs}) {
     // делим маcсив на подмассивы по три элемента
