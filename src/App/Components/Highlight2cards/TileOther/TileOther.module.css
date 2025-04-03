@@ -28,8 +28,9 @@
     height: 100%;
 }
 
+.TileOther:visited,
 .TileOther:hover {
-    color: #000;
+    color: #3c3c3c;
 }
 
 .title {
