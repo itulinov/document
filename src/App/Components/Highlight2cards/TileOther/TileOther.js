@@ -11,13 +11,16 @@ function TileOther({card}) {
         name,
         image,
         comment,
+        color,
+        url,
     } = card
 
     let style = {}
     if (image) {
         style = {
             backgroundImage: "url(\"" + image + "\")",
-            color: "#fff"
+            color: "#fff",
+            backgroundColor: color,
         }
     }
 
@@ -27,7 +30,7 @@ function TileOther({card}) {
 
 
     return (
-        <a className={Classes.TileOther} style={style}>
+        <a className={Classes.TileOther} style={style} href={url}>
             <div>
                 <div className={Classes.comment}>{comment}</div>
                 <div className={Classes.title}>{name}</div>
