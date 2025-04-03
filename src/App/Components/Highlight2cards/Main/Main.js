@@ -1,5 +1,6 @@
 import React from "react"
-import Tile from '../Tile'
+import TileMain from '../TileMain'
+import TileOther from '../TileOther'
 
 import Classes from "./Main.module.css"
 
@@ -12,11 +13,11 @@ function Main({docs}) {
         return (
             <div className={Classes.Main}>
                 <div className={Classes.first}>
-                    <Tile card={first} />
+                    <TileOther card={first} />
                 </div>
                 <div className={Classes.second} style={{flexDirection: "row"}}>
-                    <Tile card={second} />
-                    <Tile card={third} />
+                    <TileOther card={second} />
+                    <TileOther card={third} />
                 </div>
             </div>
         )
@@ -25,15 +26,15 @@ function Main({docs}) {
     return (
         <div className={Classes.Main}>
             <div className={Classes.first}>
-                <Tile card={first} image="images/tile_01.svg" />
+                <TileMain card={first} />
             </div>
             <div className={Classes.second}>
                 <div>
-                    <Tile card={second} />
-                    <Tile card={third} />
+                    <TileOther card={second} />
+                    <TileOther card={third} />
                 </div>
                 <div>
-                    <Tile card={fourth} image="images/tile_02.jpg" />
+                    <TileMain card={fourth} />
                 </div>
             </div>
         </div>

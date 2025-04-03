@@ -7,9 +7,7 @@ import Classes from "./Highlight2cards.module.css"
 
 
 function Highlight2cards({docs}) {
-    console.log(docs)
-
-    // первые четыре элемента
+    // пропускаем первые четыре элемента
     const [first, second, third, fourth, ...other] = useCards(docs)
 
     return (

@@ -1,4 +1,4 @@
-.Tile {
+.TileMain {
     min-height: 100px;
     flex: 1;
     cursor: pointer;
@@ -19,7 +19,11 @@
     position: relative;
 }
 
-.Tile:hover {
+.TileMain > div {
+    overflow: hidden;
+}
+
+.TileMain:hover {
     color: #000;
 }
 
@@ -30,18 +34,20 @@
 .comment {
     margin-top: 12px;
     color: #828388;
+    color: #fff;
 }
 
 .go {
-    top: 14px;
+    bottom: 14px;
     right: 10px;
     position: absolute;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #3c3c3c;
+    /*background-color: #3c3c3c;*/
+    background-color: #fff;
 }
 
-.Tile:hover .go {
+.TileMain:hover .go {
     background-color: #6df5d1;
 }

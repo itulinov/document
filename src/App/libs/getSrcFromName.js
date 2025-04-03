@@ -6,7 +6,8 @@ import talk from "@img/talk.png"
 import monitor from "@img/monitor.png"
 import tile_01 from "@img/tile_01.svg"
 import tile_02 from "@img/tile_02.jpg"
-import tile_hover from "@img/tile_hover.svg"
+import tile_arrow_white from "@img/tile_arrow_white.svg"
+import tile_arrow_black from "@img/tile_arrow_black.svg"
 
 
 /**
@@ -24,7 +25,8 @@ export default (name) => {
         monitor,
         tile_01,
         tile_02,
-        tile_hover,
+        tile_arrow_white,
+        tile_arrow_black,
     }
 
     return files[name]
