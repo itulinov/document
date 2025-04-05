@@ -1,6 +1,30 @@
 .Head {
-    font-size: 32px;
+    display: flex;
+}
+
+.Head > div {
+    display: flex;
+    background-color: #f7f8fc;
+    padding: 14px;
+    border-radius: 28px;
+    margin-bottom: 20px;
+}
+
+.hash,
+.title {
+    font-size: 30px;
     font-weight: 500;
     color: #000;
-    padding-bottom: 20px;
+    text-transform: lowercase;
+}
+
+.hash {
+    font-size: 30px;
+    background-color: #6df5d1;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    text-align: center;
+    padding-right: 1px;
+    margin-right: 8px;
 }

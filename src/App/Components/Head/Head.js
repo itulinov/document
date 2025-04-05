@@ -7,7 +7,12 @@ function Head({name = ""}){
     }
 
     return (
-        <div className={Classes.Head}>{name}</div>
+        <div className={Classes.Head}>
+            <div>
+                <div className={Classes.hash}>#</div>
+                <div className={Classes.title}>{name}</div>
+            </div>
+        </div>
     )
 }
 
