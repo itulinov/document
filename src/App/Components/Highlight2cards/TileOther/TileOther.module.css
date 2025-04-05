@@ -35,6 +35,7 @@
 
 .title {
     font-size: 22px;
+    font-weight: 500;
 }
 
 .comment {
@@ -53,4 +54,10 @@
 
 .TileOther:hover .go {
     background-color: #6df5d1;
+}
+
+@media (max-width: 720px) { 
+    .TileOther {
+        min-height: auto;
+    }
 }

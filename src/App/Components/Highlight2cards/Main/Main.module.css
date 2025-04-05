@@ -21,3 +21,17 @@
     display: flex;
     gap: 16px;
 }
+
+
+@media (max-width: 950px) { 
+    .Main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) { 
+    .second,
+    .second > div {
+        flex-direction: column !important;
+    }
+}

@@ -21,6 +21,7 @@
 
 .TileMain > div {
     overflow: hidden;
+    height: 100%;
 }
 
 .TileMain:hover {
@@ -29,6 +30,7 @@
 
 .title {
     font-size: 22px;
+    font-weight: 500;
 }
 
 .comment {
