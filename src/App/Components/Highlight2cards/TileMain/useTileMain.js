@@ -38,7 +38,8 @@ export default (card) => {
         clsComment.push(Classes.comment_white)
         styleLink = {backgroundImage: "url(\"" + image + "\")"}
 
-        arrow = getSrcFromName("tile_arrow_white")
+        clsGo.push(Classes.go_background_white)
+        arrow = getSrcFromName("tile_arrow_black")
         styleGo = { backgroundImage: "url(\"" + arrow + "\")"}
     }
 

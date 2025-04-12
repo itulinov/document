@@ -56,6 +56,9 @@
     border-radius: 50%;
     background-color: #3c3c3c;
 }
+.go_background_white {
+    background-color: #fff;
+}
 
 .TileMain:hover .go {
     background-color: #6df5d1;
