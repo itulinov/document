@@ -19,20 +19,38 @@ export default (card) => {
         url,
     } = card
 
+    const clsTitle = [Classes.title]
+    const clsComment = [Classes.comment]
+    const clsGo = [Classes.go]
     const clsLink = [Classes.TileMain]
     if (color) {
         clsLink.push(Background[color])
     }
 
     let arrow = getSrcFromName("tile_arrow_white")
-    let background = {backgroundImage: "url(\"" + arrow + "\")"}
+
+    let styleGo = {backgroundImage: "url(\"" + arrow + "\")"}
     let styleLink = {}
+
+    // если есть картинка
     if (image) {
+        clsTitle.push(Classes.title_white)
+        clsComment.push(Classes.comment_white)
         styleLink = {backgroundImage: "url(\"" + image + "\")"}
 
         arrow = getSrcFromName("tile_arrow_white")
-        background = { backgroundImage: "url(\"" + arrow + "\")"}
+        styleGo = { backgroundImage: "url(\"" + arrow + "\")"}
     }
 
-    return {name, comment, url, clsLink, styleLink, background}
+    return {
+        name,
+        comment,
+        url,
+        clsLink,
+        styleLink,
+        clsTitle,
+        clsComment,
+        clsGo,
+        styleGo,
+    }
 }

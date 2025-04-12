@@ -34,9 +34,17 @@
     color: #3c3c3c;
 }
 
+.title_white {
+    color: #fff;
+}
+
 .comment {
     margin-top: 12px;
     color: #828388;
+}
+
+.comment_white {
+    color: #fff;
 }
 
 .go {

@@ -1,9 +1,6 @@
 import React from "react"
 import useTileMain from './useTileMain'
 
-import Classes from "./TileMain.module.css"
-
-
 function TileMain({card}) {
     const {
         name=null,
@@ -11,10 +8,12 @@ function TileMain({card}) {
         url,
         clsLink,
         styleLink,
-        background,
+        clsTitle,
+        clsComment,
+        clsGo,
+        styleGo,
     } = useTileMain(card)
 
-    console.log(name)
     if (name === null) {
         return null
     }
@@ -22,9 +21,9 @@ function TileMain({card}) {
     return (
         <a className={clsLink.join(" ")} style={styleLink} href={url}>
             <div>
-                <div className={Classes.title}>{name}</div>
-                <div className={Classes.comment}>{comment}</div>
-                <div className={Classes.go} style={background}></div>
+                <div className={clsTitle.join(" ")}>{name}</div>
+                <div className={clsComment.join(" ")}>{comment}</div>
+                <div className={clsGo.join(" ")} style={styleGo}></div>
             </div>
         </a>
     )
