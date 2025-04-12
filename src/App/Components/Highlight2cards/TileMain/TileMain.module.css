@@ -31,12 +31,12 @@
 .title {
     font-size: 22px;
     font-weight: 500;
+    color: #3c3c3c;
 }
 
 .comment {
     margin-top: 12px;
     color: #828388;
-    color: #fff;
 }
 
 .go {
@@ -46,8 +46,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    /*background-color: #3c3c3c;*/
-    background-color: #fff;
+    background-color: #3c3c3c;
 }
 
 .TileMain:hover .go {

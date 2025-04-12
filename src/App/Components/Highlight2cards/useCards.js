@@ -4,11 +4,11 @@ import getSrcFromName from "@App/libs/getSrcFromName.js"
 export default (docs) => {
     let [first, second, third, fourth, ...other] = docs
 
-    if (first && !first.image) {
+    if (first && !first.image && !first.color) {
         first.image = getSrcFromName("tile_01")
     }
 
-    if (fourth && !fourth.image) {
+    if (fourth && !fourth.image && !fourth.color) {
         fourth.image = getSrcFromName("tile_02")
     }
 
