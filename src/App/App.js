@@ -23,9 +23,9 @@ function App({settings}) {
     const {tile: type} = settings.data
     return (
         <div className={Classes.App}>
-            <Banner url={banner}/>
-            <Head name={head}/>
-            <Documents docs={docs} type={type}/>
+            <Banner url={banner} />
+            <Head name={head} type={type} />
+            <Documents docs={docs} type={type} />
         </div>
     )
 }
