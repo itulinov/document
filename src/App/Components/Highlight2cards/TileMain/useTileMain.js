@@ -6,7 +6,6 @@ import Background from '../Background.module.css'
 
 
 export default (card) => {
-    console.log(card)
     if (!card) {
         return {}
     }

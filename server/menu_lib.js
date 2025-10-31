@@ -61,6 +61,7 @@ function getSql(id) {
  * @return {object}
  */
 function getMainDocument(id) {
+    addLog(id)
     var card = OpenDoc(UrlFromDocID(Int(id))).TopElem
 
     var url = ""
@@ -134,7 +135,7 @@ function getFieldForMenu(document, card, mode) {
  * @param {string} mode - элемент шаблона для перехода к дочернему разделу
  * @return {array}
  */
-function getMenus(documentId, userId, mode) {
+function getDocuments(documentId, userId, mode) {
     var query = getSql(documentId)
     //addLog(query)
     var documents = XQuery("sql: " + query)
@@ -174,7 +175,7 @@ function getMenu(documentId, userId, mode) {
     }
 
     var menu = getMainDocument(documentId)
-    menu.menus = getMenus(documentId, userId, sMode)
+    menu.menus = getDocuments(documentId, userId, sMode)
 
     return [menu]
 }

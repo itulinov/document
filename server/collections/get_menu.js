@@ -6,7 +6,7 @@
 function addLog(value, name) {
     var sLogName = name
     if (sLogName == undefined) {
-        sLogName = 'get_menu'
+        sLogName = 'document'
     }
 
     EnableLog(sLogName)
