@@ -18,11 +18,11 @@ function addLog(value, name) {
 
 // entry point
 try {
-    var path = 'x-local://wt/web/custom_projects/menu/'
-    var file = 'menu_lib.js'
+    var path = 'x-local://wt/web/custom_projects/document/'
+    var file = 'document_lib.js'
     var LIB = OpenCodeLib(path + file).clear()
 
-    RESULT = LIB.getMenu(document_id, curUserID, mode)
+    RESULT = LIB.getDocument(document_id, curUserID, mode)
     ERROR = 0;
     MESSAGE = ""
 }

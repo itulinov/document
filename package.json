@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "menu",
   "main": "./index.js",
-  "homepage": "/custom_projects/menu/build/",
+  "homepage": "/custom_projects/document/build/",
   "scripts": {
     "build": "webpack --config ./webpack.config.prod.js",
     "start": "node ."

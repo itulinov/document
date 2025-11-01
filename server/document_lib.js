@@ -6,7 +6,7 @@
 function addLog(value, name) {
     var sLogName = name
     if (sLogName == undefined) {
-        sLogName = 'menu_lib'
+        sLogName = 'document_lib'
     }
 
     EnableLog(sLogName)
@@ -19,8 +19,8 @@ function addLog(value, name) {
  * @return {XmElem}
  */
 function clear(newFileLib) {
-    var path = 'x-local://wt/web/custom_projects/menu/'
-    var file = 'menu_lib.js'
+    var path = 'x-local://wt/web/custom_projects/document/'
+    var file = 'document_lib.js'
 
     if (newFileLib != undefined) {
         file = newFileLib
@@ -61,7 +61,6 @@ function getSql(id) {
  * @return {object}
  */
 function getMainDocument(id) {
-    addLog(id)
     var card = OpenDoc(UrlFromDocID(Int(id))).TopElem
 
     var url = ""
@@ -168,7 +167,7 @@ function getDocuments(documentId, userId, mode) {
  * @param {string} mode - элемент шаблона для перехода к дочернему разделу
  * @return {array}
  */
-function getMenu(documentId, userId, mode) {
+function getDocument(documentId, userId, mode) {
     var sMode = String(mode)
     if (sMode == "") {
         sMode = "menu"
